@@ -1,0 +1,13 @@
+cd C:\xampp\java-basics\src\hw_1
+
+javac SumTwo.java
+
+cd..
+
+java -cp . hw_1.SumTwo
+
+5
+
+-12
+
+
