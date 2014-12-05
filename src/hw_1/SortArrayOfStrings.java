@@ -8,6 +8,7 @@ import java.util.Scanner;
  */
 public class SortArrayOfStrings {
     public static void main(String[] args) {
+
         printSortedNInputWords();
     }
 
@@ -15,12 +16,12 @@ public class SortArrayOfStrings {
         System.out.println("Enter the number of cities:");
         Scanner in = new Scanner(System.in);
 
-        try{
+        try {
             int n = in.nextInt();
             String[] words = new String[n];
 
             for (int i = 0; i < n; i++) {
-                System.out.println("Enter city [" + (n-i) + "]:");
+                System.out.println("Enter city [" + (n - i) + "]:");
                 String input = in.next("\\w+");
                 words[i] = capitalizeString(input);
             }
@@ -30,7 +31,7 @@ public class SortArrayOfStrings {
             System.out.println("Sorted:");
             System.out.println(Arrays.toString(words));
 
-        } catch (Exception e){
+        } catch (Exception e) {
             System.err.println("Invalid Format!");
             printSortedNInputWords();
         }

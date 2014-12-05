@@ -14,7 +14,7 @@ public class SumTwo {
         System.out.println("Enter an integer:");
         Scanner in = new Scanner(System.in);
 
-        try{
+        try {
             int first = in.nextInt();
 
             System.out.println("Enter another one:");
@@ -23,7 +23,7 @@ public class SumTwo {
             System.out.println("The sum is:");
             System.out.println(first + last);
 
-        } catch (Exception e){
+        } catch (Exception e) {
             System.err.println("Invalid Format!");
             printSumOfTwoInputIntegers();
         }
