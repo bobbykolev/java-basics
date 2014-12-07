@@ -22,7 +22,7 @@ public class TriangleArea {
             System.out.println("Enter triangle coordinates (separated by empty space or new line):");
 
             for (int i = 0; i < 6; i++) {
-                String[] input = in.next("(-)?\\d+(\\.\\d)?").split(" ");
+                String[] input = in.next("(-)?\\d+(\\.\\d+)?").split(" ");
 
                 for (int j = 0; j < input.length; j++) {
                     coordinates[i + j] = Double.parseDouble(input[j]);
